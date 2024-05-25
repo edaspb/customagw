@@ -75,7 +75,7 @@ apt-get update
 #  service systemd-resolved restart
 
   # interface config
-  apt install -y ifupdown net-tools ipcalc
+ # apt install -y ifupdown net-tools ipcalc
  # mkdir -p "$INTERFACE_DIR"
   #echo "source-directory $INTERFACE_DIR" > /etc/network/interfaces
 
@@ -205,7 +205,7 @@ fi
   rm -rf /home/$MAGMA_USER/magma
 
   echo "AGW installation is done, Run agw_post_install_ubuntu.sh install script after reboot to finish installation"
-  wget https://raw.githubusercontent.com/magma/magma/"$MAGMA_VERSION"/lte/gateway/deploy/agw_post_install_ubuntu.sh -P /root/
+  #wget https://raw.githubusercontent.com/magma/magma/"$MAGMA_VERSION"/lte/gateway/deploy/agw_post_install_ubuntu.sh -P /root/
 
   #reboot
 #else
